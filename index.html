@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Hugo Ovani Marchetti</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link para o CSS customizado -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts: Fonte monoespaçada futurista (Fira Code) -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="w-screen overflow-x-hidden font-mono snap-y snap-mandatory">
+    <!-- Botão Hamburger (fixo no topo) -->
+    <div class="fixed top-4 right-4 z-20">
+        <button id="menu-toggle" class="text-cyan-400 focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Menu Fixo na Base (desktop) e Mobile (full-screen) -->
+    <nav id="menu" class="hidden md:flex fixed bottom-0 left-0 w-full h-auto md:bg-gray-900 md:bg-opacity-80 py-4 z-10 md:h-auto md:py-4 bg-gray-900 md:flex-row flex-col justify-center items-center gap-6 text-cyan-400">
+        <div class="max-w-6xl mx-auto px-8 flex flex-col md:flex-row justify-center items-center gap-6 text-cyan-400 w-full h-full">
+            <a href="#home" id="link-home" class="text-lg link-hover">Home</a>
+            <a href="#about" id="link-about" class="text-lg link-hover">About Me</a>
+            <a href="#web-development" id="link-web-development" class="text-lg link-hover">Web Development</a>
+            <a href="#machine-learning" id="link-machine-learning" class="text-lg link-hover">Machine Learning</a>
+            <a href="#contact" id="link-contact" class="text-lg link-hover">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Tela Inicial -->
+    <section id="home" class="min-h-screen w-full flex flex-col items-center justify-center text-white relative">
+        <!-- Conteúdo Principal -->
+        <div class="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl px-8 py-16">
+            <!-- Texto -->
+            <div class="text-center md:text-left order-2 md:order-1">
+                <h1 id="title" class="text-5xl md:text-7xl font-bold fade-in tracking-wider">
+                    Hello, I'm Victor Marchetti
+                </h1>
+                <p id="subtitle" class="text-xl md:text-3xl mt-4 fade-in-delay text-cyan-300">
+                    I integrate technology and science to craft innovative solutions
+                </p>
+                <br/>
+                <!-- Descrição -->
+                <p class="fade-in-delay">A medical student passionate about programming since age 11, with expertise in web development and machine learning, skilled in PHP, Python, and R.</p>
+            </div>
+            <!-- Foto -->
+            <div class="mt-8 md:mt-0 order-1 md:order-2">
+                <img src="assets/images/profile.webp" alt="Victor Hugo Ovani Marchetti" class="profile-img fade-in-delay">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção About Me -->
+    <section id="about" class="min-h-screen w-full flex flex-col items-center justify-center text-white relative">
+        <div class="max-w-6xl mx-auto px-8 py-16">
+            <!-- Cabeçalho -->
+            <h2 class="text-4xl md:text-5xl font-bold text-center fade-in">About Me</h2>
+            <p class="text-lg md:text-xl mt-4 text-center text-cyan-300 fade-in-delay">
+                A multidisciplinary innovator blending technology, medicine, and administration to solve real-world challenges.
+            </p>
+
+            <!-- História -->
+            <div class="mt-12 space-y-8">
+                <!-- Técnico em Administração -->
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold fade-in">Technical Degree in Administration Integrated with High School - IFES Colatina</h3>
+                    <p class="mt-2 text-cyan-300 fade-in-delay">Graduated from one of Brazil's top high school public institutions, where I honed my skills in management and technology.</p>
+                    <ul class="mt-4 space-y-2 text-cyan-400 fade-in-delay">
+                        <li>Developed a website for the "Semana de Arte e Cultura" with an inscription system.</li>
+                        <li>Created an app for the "Seminário de Humanidades" at IFES Linhares.</li>
+                        <li>Served as a Mathematics tutor, supporting peers in technical education.</li>
+                        <li>Led marketing efforts in a Junior Achievement mini-company.</li>
+                        <li>Earned 2 institutional commendations for outstanding contributions.</li>
+                    </ul>
+                </div>
+
+                <!-- Graduação em Medicina -->
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold fade-in">Medical Student - UNESC</h3>
+                    <p class="mt-2 text-cyan-300 fade-in-delay">Current Prouni scholar pursuing medicine, with a focus on evidence-based practice and cutting-edge research.</p>
+                    <ul class="mt-4 space-y-2 text-cyan-400 fade-in-delay">
+                        <li>Published 18 works in conference proceedings, including 6 leveraging AI models.</li>
+                        <li>Received 6 awards for top scientific papers since my first year.</li>
+                        <li>Authored 4 peer-reviewed scientific articles.</li>
+                        <li>Created an online course on Evidence-Based Medicine, sold to over 100 peers.</li>
+                        <li>Developed "Já Revisou," a spaced repetition platform for personal use in medical residency prep.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Web Development -->
+    <section id="web-development" class="min-h-screen w-full flex flex-col items-center justify-center text-white relative">
+        <div class="max-w-6xl mx-auto px-8 py-16">
+            <!-- Cabeçalho -->
+            <h2 class="text-4xl md:text-5xl font-bold text-center fade-in">Web Development</h2>
+            <p class="text-lg md:text-xl mt-4 text-center text-cyan-300 fade-in-delay">
+                Crafting innovative web solutions to streamline education, healthcare, and personal productivity.
+            </p>
+
+            <!-- Projetos -->
+            <div class="mt-12 space-y-12">
+                <!-- Sistema de Inscrições IFES -->
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <img src="assets/images/sistemadeinscricoes.png" alt="IFES Events System" class="w-full md:w-1/3 h-48 object-cover rounded-lg border-2 border-cyan-400 fade-in-delay">
+                    <div class="flex-1">
+                        <h3 class="text-2xl md:text-3xl font-bold fade-in">IFES Campus Colatina Event Registration System</h3>
+                        <p class="mt-2 text-cyan-300 fade-in-delay">A robust platform for managing event registrations at IFES Campus Colatina, enhancing institutional efficiency.</p>
+                        <ul class="mt-4 space-y-2 text-cyan-400 fade-in-delay">
+                            <li>Administrative event and sub-event registration.</li>
+                            <li>Individual login for over 500 registered students.</li>
+                            <li>Event capacity limits and prevention of simultaneous registrations.</li>
+                            <li>Online and printable attendance lists.</li>
+                            <li>CSV export for certificate issuance via the campus system.</li>
+                            <li>Used in "Semana de Arte e Cultura" and "Café Científico" events.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sistema de Revisão Espaçada -->
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <img src="assets/images/sistemaderevisao.png" alt="Spaced Revision System" class="w-full md:w-1/3 h-48 object-cover rounded-lg border-2 border-cyan-400 fade-in-delay">
+                    <div class="flex-1">
+                        <h3 class="text-2xl md:text-3xl font-bold fade-in">Spaced Revision System for Medical Residency Prep</h3>
+                        <p class="mt-2 text-cyan-300 fade-in-delay">A personal tool for spaced repetition, shared with peers to optimize medical residency preparation.</p>
+                        <ul class="mt-4 space-y-2 text-cyan-400 fade-in-delay">
+                            <li>Individual user registration.</li>
+                            <li>Automatic import of schedules from top Brazilian prep courses.</li>
+                            <li>Uniform content distribution over customizable intervals.</li>
+                            <li>Recalculation of schedules for delayed students.</li>
+                            <li>Tracking of question accuracy metrics.</li>
+                            <li>Scheduled spaced revision based on study dates.</li>
+                        </ul>
+                        <a href="https://app.jarevisou.com.br" target="_blank" class="mt-4 inline-block text-cyan-400 underline hover:text-cyan-300 fade-in-delay">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Sistema de Saúde -->
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <img src="assets/images/areadopaciente.png" alt="Health System" class="w-full md:w-1/3 h-48 object-cover rounded-lg border-2 border-cyan-400 fade-in-delay">
+                    <div class="flex-1">
+                        <h3 class="text-2xl md:text-3xl font-bold fade-in">Healthcare System with Patient Area</h3>
+                        <p class="mt-2 text-cyan-300 fade-in-delay">A customizable portfolio project designed to streamline patient-provider interactions.</p>
+                        <ul class="mt-4 space-y-2 text-cyan-400 fade-in-delay">
+                            <li>Whitelabel system with easy customization via forms (colors, name, link, app).</li>
+                            <li>Dynamic medical record system with professional-created forms.</li>
+                            <li>Patient area with individual login.</li>
+                            <li>Support for patient forms tracking blood pressure, mood, lab results, and more.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Machine Learning -->
+    <section id="machine-learning" class="min-h-screen w-full flex flex-col items-center justify-center text-white relative">
+        <div class="max-w-6xl mx-auto px-8 py-16">
+            <!-- Cabeçalho -->
+            <h2 class="text-4xl md:text-5xl font-bold text-center fade-in">Machine Learning</h2>
+            <p class="text-lg md:text-xl mt-4 text-center text-cyan-300 fade-in-delay">
+                Leveraging machine learning to drive advancements in healthcare and predictive analytics.
+            </p>
+
+            <!-- Trabalhos -->
+            <div class="mt-12 space-y-12">
+                <!-- Trabalho 1 - Random Forest para PAV -->
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold fade-in">Random Forest Model for Predicting Ventilator-Associated Pneumonia (VAP) in Patients on Mechanical Ventilation for Over 48 Hours</h3>
+                    <ul class="mt-4 space-y-2 text-cyan-400 fade-in-delay">
+                        <li>Authors: Victor Hugo Ovani Marchetti, et al.</li>
+                        <li>Work presented at the "Brazilian Congress of Intensive Care Medicine" with proceedings published in:
+                            <a href="https://criticalcarescience.org/wp-content/uploads/sites/7/2024/04/RBTI_Suplemento_2022.pdf" target="_blank" class="underline hover:text-cyan-300">
+                                Revista Brasileira de Terapia Intensiva, Supplement 1, 2022 (Click here to view)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Trabalho 2 - Random Forest para Mortalidade em COVID-19 -->
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold fade-in">Predictive Capacity of the Random Forest Model for Mortality in COVID-19 Patients: A Data Analysis in the Pandemic Context</h3>
+                    <ul class="mt-4 space-y-2 text-cyan-400 fade-in-delay">
+                        <li>Authors: Victor Hugo Ovani Marchetti, M. E. P. Dalmaschio, Tatiani Bellettini-Santos, E. T. Pandini.</li>
+                        <li>Work presented at the "Brazilian Congress of Infectious Diseases" with proceedings published in:
+                            <a href="https://www.sciencedirect.com/science/article/pii/S1413867023001605?__cf_chl_tk=7AdPKX1YXmfGLiLlDasEDVhPk.au4.xLWCf5JvW9VJM-1740328356-1.0.1.1-5ukd2rUugr0hmJmH4lk9lJjPqIM3AgY0YeoTv7o6gQo" target="_blank" class="underline hover:text-cyan-300">
+                                Brazilian Journal of Infectious Diseases, 27(S1):102812, 2023 (Click here to view)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Trabalho 3 - Algoritmos de Aprendizado de Máquina para Insuficiência Cardíaca -->
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold fade-in">Application of Machine Learning Algorithms in Predicting Hospital Outcomes for Patients with Heart Failure</h3>
+                    <ul class="mt-4 space-y-2 text-cyan-400 fade-in-delay">
+                        <li>Authors: Victor Hugo Ovani Marchetti, et al.</li>
+                        <li>Work presented at the "SBC-ES Congress" with certificate available at:
+                            <a href="https://inscricaoeletronica.com.br/liveeventos/congressosbces2024/certificado/certificado2.php?id=9793&c=15" target="_blank" class="underline hover:text-cyan-300">
+                                (Click here to view certificate)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Trabalho 4 - Análise de IA para Doença de Chagas -->
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold fade-in">Analysis of Artificial Intelligence Models for Diagnosing Chagas Disease: An Application to the SINAN System (2017-2021)</h3>
+                    <ul class="mt-4 space-y-2 text-cyan-400 fade-in-delay">
+                        <li>Authors: Victor Hugo Ovani Marchetti, et al.</li>
+                        <li>Work presented at the "SBC-ES Congress" with certificate available at:
+                            <a href="https://inscricaoeletronica.com.br/liveeventos/congressosbces2024/certificado/certificado2.php?id=9793&c=44" target="_blank" class="underline hover:text-cyan-300">
+                                (Click here to view)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Trabalho 5 - Modelos de Machine Learning para Hipertensão Arterial -->
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold fade-in">Machine Learning Models for Pre-Test Probability Assessment of Hypertension</h3>
+                    <ul class="mt-4 space-y-2 text-cyan-400 fade-in-delay">
+                        <li>Authors: Victor Hugo Ovani Marchetti, et al.</li>
+                        <li>Work presented at the "SBC-ES Congress" with certificate available at:
+                            <a href="https://inscricaoeletronica.com.br/liveeventos/congressosbces2024/certificado/certificado2.php?id=9793&c=45" target="_blank" class="underline hover:text-cyan-300">
+                                (Click here to view)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contact -->
+    <section id="contact" class="min-h-screen w-full flex flex-col items-center justify-center text-white relative">
+        <div class="max-w-6xl mx-auto px-8 py-16">
+            <!-- Cabeçalho -->
+            <h2 class="text-4xl md:text-5xl font-bold text-center fade-in">Contact</h2>
+            <p class="text-lg md:text-xl mt-4 text-center text-cyan-300 fade-in-delay">
+                Get in touch to collaborate or discuss opportunities.
+            </p>
+
+            <!-- Informações de Contato -->
+            <div class="mt-12 space-y-8">
+                <!-- E-mail -->
+                <div class="text-center">
+                    <p class="text-xl text-cyan-400 fade-in-delay">Email: <a href="mailto:victormarchetti.51@gmail.com" class="underline hover:text-cyan-300">victormarchetti.51@gmail.com</a></p>
+                </div>
+                <!-- Redes Sociais com Ícones -->
+                <div class="text-center flex justify-center gap-6 fade-in-delay">
+                    <a href="https://github.com/victorovanimarchetti" target="_blank" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-2">
+                        <i class="fab fa-github fa-lg text-white"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/victorovanimarchetti/" target="_blank" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-2">
+                        <i class="fab fa-linkedin fa-lg text-white"></i>
+                    </a>
+                    <a href="http://lattes.cnpq.br/2638471094320533" target="_blank" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-2">
+                        <i class="fas fa-user-graduate fa-lg text-white"></i>
+                    </a>
+                    <a href="https://instagram.com/medvictormarchetti" target="_blank" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-2">
+                        <i class="fab fa-instagram fa-lg text-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
