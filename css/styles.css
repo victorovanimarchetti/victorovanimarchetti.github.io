@@ -105,22 +105,36 @@ section {
     max-width: 100%;
 }
 
-/* Estilo da seção About Me, Web Development e Machine Learning */
-#about ul, #web-development ul, #machine-learning ul {
+/* Estilo da seção About Me, Recommendations, Web Development, Machine Learning e Contact */
+#about ul, #recommendations ul, #web-development ul, #machine-learning ul {
     list-style: none;
     padding-left: 0;
 }
 
-#about ul li, #web-development ul li, #machine-learning ul li {
+#about ul li, #recommendations ul li, #web-development ul li, #machine-learning ul li {
     position: relative;
     padding-left: 1.5rem;
 }
 
-#about ul li:before, #web-development ul li:before, #machine-learning ul li:before {
+#about ul li:before, #recommendations ul li:before, #web-development ul li:before, #machine-learning ul li:before {
     content: '>';
     position: absolute;
     left: 0;
     color: #00ffff;
+}
+
+/* Estilo das fotos de perfil nas recomendações */
+#recommendations img {
+    max-width: 100%;
+}
+
+/* Estilo dos ícones nas redes sociais */
+.social-icon {
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00ffff; /* Ciano ao passar o mouse, para consistência com o tema */
 }
 
 /* Estilo do menu responsivo em mobile */
@@ -163,11 +177,28 @@ section {
         margin-bottom: 1rem;
     }
     
-    #about h2, #web-development h2, #machine-learning h2 {
+    #about h2, #recommendations h2, #web-development h2, #machine-learning h2, #contact h2 {
         font-size: 2.5rem;
     }
     
     #about h3, #web-development h3, #machine-learning h3 {
         font-size: 1.5rem;
+    }
+    
+    #recommendations .text-xl {
+        font-size: 1.125rem; /* Ajuste para mobile */
+    }
+    
+    #recommendations .text-sm {
+        font-size: 0.75rem; /* Ajuste para mobile */
+    }
+    
+    #contact .flex {
+        flex-direction: column;
+        gap-4;
+    }
+    
+    #contact .flex a {
+        margin: 0 auto;
     }
 }
