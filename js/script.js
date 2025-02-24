@@ -17,15 +17,6 @@ const content = {
         description: "Insights from colleagues and mentors about my work and character.",
         recs: [
             {
-                name: "Sarah Fernandes Teixeira",
-                connection: "1st Degree Connection",
-                date: "",
-                role: "",
-                textEn: "Victor Hugo has always been a standout as a student and future professional. His commendable skills, humility in learning and teaching, and relentless pursuit of excellence make him a unique colleague and student. Medicine, and any field he chooses to engage with, will surely benefit from his contributions.",
-                textPt: "Victor Hugo sempre foi uma referência enquanto acadêmico e futuro profissional. Sua competência louvável, sua humildade em aprender e ensinar, e sua busca incessante pela excelência o tornam um aluno e colega singular. A Medicina, e em todas as áreas que ousar viver, irá cativar grandes feitos.",
-                image: "assets/images/sarah-teixeira.jpg"
-            },
-            {
                 name: "Helio Angotti Neto",
                 connection: "1st Degree Connection",
                 date: "Supervised Victor Hugo directly on April 25, 2024",
