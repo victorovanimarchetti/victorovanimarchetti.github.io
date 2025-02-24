@@ -170,7 +170,7 @@ function updateContent() {
 }
 
 // Inicializa o conteúdo ao carregar
-document.addEventListener("DOMContentLoaded", updateContent);
+//document.addEventListener("DOMContentLoaded", updateContent);
 
 // Controle de rolagem para pular seções apenas no fim
 let ticking = false;
