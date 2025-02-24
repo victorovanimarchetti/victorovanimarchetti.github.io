@@ -2,7 +2,7 @@
 const content = {
     title: "Hello, I'm Victor Marchetti",
     subtitle: "I enjoy exploring the connection between technology and science to create helpful solutions",
-    words: "I’m a medical student with an interest in programming, starting at age 11, and I’ve worked on small projects in web development and machine learning, using tools like PHP, Python, and R.",
+    words: "I’m a medical student with an interest in programming, starting at age 11, and I’ve worked on projects in web development and machine learning, using tools like PHP, Python, and R.",
     links: ["Home", "About Me", "Web Development", "Machine Learning", "Contact"],
     about: {
         title: "About Me",
