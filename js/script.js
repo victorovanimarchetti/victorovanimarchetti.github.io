@@ -1,42 +1,42 @@
 // Dados de texto em inglês
 const content = {
     title: "Hello, I'm Victor Marchetti",
-    subtitle: "I integrate technology and science to craft innovative solutions",
-    words: "A medical student passionate about programming since age 11, with expertise in web development and machine learning, skilled in PHP, Python, and R.",
+    subtitle: "I enjoy exploring the connection between technology and science to create helpful solutions",
+    words: "I’m a medical student with an interest in programming, starting at age 11, and I’ve worked on small projects in web development and machine learning, using tools like PHP, Python, and R.",
     links: ["Home", "About Me", "Web Development", "Machine Learning", "Contact"],
     about: {
         title: "About Me",
-        description: "A multidisciplinary innovator blending technology, medicine, and administration to solve real-world challenges.",
+        description: "I’m someone who enjoys combining technology, medicine, and administration to explore solutions for everyday challenges.",
         techTitle: "Technical Degree in Administration Integrated with High School - IFES Colatina",
-        techDesc: "Graduated from one of Brazil's top high school public institutions, where I honed my skills in management and technology.",
+        techDesc: "I completed my technical degree at a respected public high school in Brazil, where I began learning about management and technology.",
         medTitle: "Medical Student - UNESC",
-        medDesc: "Current Prouni scholar pursuing medicine, with a focus on evidence-based practice and cutting-edge research."
+        medDesc: "I’m currently a Prouni scholar studying medicine at UNESC, with an interest in evidence-based practice and research."
     },
     webDevelopment: {
         title: "Web Development",
-        description: "Crafting innovative web solutions to streamline education, healthcare, and personal productivity.",
+        description: "I’ve worked on a few web projects to support education, healthcare, and personal productivity.",
         projects: [
             {
                 title: "IFES Campus Colatina Event Registration System",
-                desc: "A robust platform for managing event registrations at IFES Campus Colatina, enhancing institutional efficiency.",
+                desc: "A simple platform I developed to help manage event registrations at IFES Campus Colatina, hoping to make things a bit easier for the institution.",
                 details: [
-                    "Administrative event and sub-event registration.",
-                    "Individual login for over 500 registered students.",
-                    "Event capacity limits and prevention of simultaneous registrations.",
+                    "Basic administrative registration for events and sub-events.",
+                    "Individual logins for students, with over 500 users registered.",
+                    "Simple limits on event capacity and prevention of overlapping registrations.",
                     "Online and printable attendance lists.",
-                    "CSV export for certificate issuance via the campus system.",
-                    "Used in 'Semana de Arte e Cultura' and 'Café Científico' events."
+                    "CSV export for certificate issuance through the campus system.",
+                    "Used in events like 'Semana de Arte e Cultura' and 'Café Científico'."
                 ],
                 link: "#"
             },
             {
                 title: "Spaced Revision System for Medical Residency Prep",
-                desc: "A personal tool for spaced repetition, shared with peers to optimize medical residency preparation.",
+                desc: "A small tool I created for my own use in preparing for medical residency, which I shared with a few peers who found it useful.",
                 details: [
-                    "Individual user registration.",
-                    "Automatic import of schedules from top Brazilian prep courses.",
-                    "Uniform content distribution over customizable intervals.",
-                    "Recalculation of schedules for delayed students.",
+                    "Basic individual user registration.",
+                    "Automatic import of schedules from some Brazilian prep courses.",
+                    "Simple distribution of content over customizable time intervals.",
+                    "Adjustments for delayed schedules.",
                     "Tracking of question accuracy metrics.",
                     "Scheduled spaced revision based on study dates."
                 ],
@@ -44,12 +44,12 @@ const content = {
             },
             {
                 title: "Healthcare System with Patient Area",
-                desc: "A customizable portfolio project designed to streamline patient-provider interactions.",
+                desc: "A modest project I worked on for my portfolio, aiming to simplify interactions between patients and healthcare providers.",
                 details: [
-                    "Whitelabel system with easy customization via forms (colors, name, link, app).",
-                    "Dynamic medical record system with professional-created forms.",
+                    "Basic whitelabel system with simple customization options for colors, name, link, and app.",
+                    "Dynamic medical record system with forms created by the professional.",
                     "Patient area with individual login.",
-                    "Support for patient forms tracking blood pressure, mood, lab results, and more."
+                    "Support for patient forms tracking basic health metrics like blood pressure, mood, and lab results."
                 ],
                 link: "#"
             }
@@ -57,11 +57,11 @@ const content = {
     },
     machineLearning: {
         title: "Machine Learning",
-        description: "Leveraging machine learning to drive advancements in healthcare and predictive analytics.",
+        description: "I’ve explored machine learning to contribute modestly to healthcare and predictive analytics.",
         works: [
             {
                 title: "Random Forest Model for Predicting Ventilator-Associated Pneumonia (VAP) in Patients on Mechanical Ventilation for Over 48 Hours",
-                desc: "Presented at the 'Brazilian Congress of Intensive Care Medicine,' this work utilized a Random Forest model to predict VAP outcomes.",
+                desc: "I contributed to a study presented at the 'Brazilian Congress of Intensive Care Medicine,' published in: Revista Brasileira de Terapia Intensiva, Supplement 1, 2022.",
                 details: [
                     "Authors: Victor Hugo Ovani Marchetti, et al.",
                     "Work presented at the 'Brazilian Congress of Intensive Care Medicine' with proceedings published in: Revista Brasileira de Terapia Intensiva, Supplement 1, 2022."
@@ -70,7 +70,7 @@ const content = {
             },
             {
                 title: "Predictive Capacity of the Random Forest Model for Mortality in COVID-19 Patients: A Data Analysis in the Pandemic Context",
-                desc: "Presented at the 'Brazilian Congress of Infectious Diseases,' this study analyzed the Random Forest model's ability to predict mortality in COVID-19 patients.",
+                desc: "I participated in a study presented at the 'Brazilian Congress of Infectious Diseases,' published in: Brazilian Journal of Infectious Diseases, 27(S1):102812, 2023.",
                 details: [
                     "Authors: Victor Hugo Ovani Marchetti, M. E. P. Dalmaschio, Tatiani Bellettini-Santos, E. T. Pandini.",
                     "Work presented at the 'Brazilian Congress of Infectious Diseases' with proceedings published in: Brazilian Journal of Infectious Diseases, 27(S1):102812, 2023."
@@ -79,7 +79,7 @@ const content = {
             },
             {
                 title: "Application of Machine Learning Algorithms in Predicting Hospital Outcomes for Patients with Heart Failure",
-                desc: "Presented at the 'SBC-ES Congress,' this work applied machine learning to predict outcomes for heart failure patients.",
+                desc: "I contributed to a project presented at the 'SBC-ES Congress,' with a certificate available at:",
                 details: [
                     "Authors: Victor Hugo Ovani Marchetti, et al.",
                     "Work presented at the 'SBC-ES Congress' with certificate available at:"
@@ -88,7 +88,7 @@ const content = {
             },
             {
                 title: "Analysis of Artificial Intelligence Models for Diagnosing Chagas Disease: An Application to the SINAN System (2017-2021)",
-                desc: "Presented at the 'SBC-ES Congress,' this study used AI models to diagnose Chagas disease using the SINAN system data from 2017-2021.",
+                desc: "I was involved in a study presented at the 'SBC-ES Congress,' with a certificate available at:",
                 details: [
                     "Authors: Victor Hugo Ovani Marchetti, et al.",
                     "Work presented at the 'SBC-ES Congress' with certificate available at:"
@@ -97,13 +97,24 @@ const content = {
             },
             {
                 title: "Machine Learning Models for Pre-Test Probability Assessment of Hypertension",
-                desc: "Presented at the 'SBC-ES Congress,' this work applied machine learning to assess pre-test probabilities for hypertension.",
+                desc: "I contributed to a project presented at the 'SBC-ES Congress,' with a certificate available at:",
                 details: [
                     "Authors: Victor Hugo Ovani Marchetti, et al.",
                     "Work presented at the 'SBC-ES Congress' with certificate available at:"
                 ],
                 certificate: "https://inscricaoeletronica.com.br/liveeventos/congressosbces2024/certificado/certificado2.php?id=9793&c=45"
             }
+        ]
+    },
+    contact: {
+        title: "Contact",
+        description: "I’d be happy to connect and chat about ideas or projects.",
+        email: "victormarchetti.51@gmail.com",
+        socials: [
+            { name: "GitHub", url: "https://github.com/victorovanimarchetti", icon: "fab fa-github" },
+            { name: "LinkedIn", url: "https://www.linkedin.com/in/victorovanimarchetti/", icon: "fab fa-linkedin" },
+            { name: "Lattes", url: "http://lattes.cnpq.br/2638471094320533", icon: "fas fa-user-graduate" },
+            { name: "Instagram", url: "https://instagram.com/medvictormarchetti", icon: "fab fa-instagram" }
         ]
     }
 };
@@ -131,6 +142,10 @@ const webDevProjects = document.querySelectorAll("#web-development .space-y-12 >
 const mlTitle = document.querySelector("#machine-learning h2");
 const mlDesc = document.querySelector("#machine-learning > div > p");
 const mlWorks = document.querySelectorAll("#machine-learning .space-y-12 > div");
+const contactTitle = document.querySelector("#contact h2");
+const contactDesc = document.querySelector("#contact p");
+const contactEmail = document.querySelector("#contact .text-center p");
+const contactSocials = document.querySelector("#contact .flex");
 
 // Atualiza o conteúdo inicialmente
 function updateContent() {
@@ -167,10 +182,16 @@ function updateContent() {
             certificateLinks.innerHTML = `<a href="${content.machineLearning.works[index].certificate}" target="_blank" class="underline hover:text-cyan-300">Click here to view</a>`;
         }
     });
+    contactTitle.textContent = content.contact.title;
+    contactDesc.textContent = content.contact.description;
+    contactEmail.innerHTML = `Email: <a href="mailto:${content.contact.email}" class="underline hover:text-cyan-300">${content.contact.email}</a>`;
+    contactSocials.innerHTML = content.contact.socials
+        .map(social => `<a href="${social.url}" target="_blank" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-2"><i class="${social.icon} fa-lg text-white"></i> ${social.name}</a>`)
+        .join("");
 }
 
 // Inicializa o conteúdo ao carregar
-//document.addEventListener("DOMContentLoaded", updateContent);
+document.addEventListener("DOMContentLoaded", updateContent);
 
 // Controle de rolagem para pular seções apenas no fim
 let ticking = false;
